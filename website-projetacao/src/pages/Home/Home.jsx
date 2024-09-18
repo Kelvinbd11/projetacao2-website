@@ -7,6 +7,7 @@ import empresa from '../../assets/images/empresa.jpg'
 
 import ButtonDark from '../../components/ButtonDark/ButtonDark'
 import ButtonLight from '../../components/ButtonLight/ButtonLight'
+import DetalhesSection from '../../components/DetalhesSection/DetalhesSection';
 
 
 const Home = () => {
@@ -74,6 +75,12 @@ const Home = () => {
           </div>
 
           {/* Section 03 - Fim */}
+
+          {/* Section 04 - Início */}
+
+          <DetalhesSection />  
+
+          {/* Section 04 - Fim */}
 
 
 
