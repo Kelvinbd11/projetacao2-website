@@ -1,10 +1,9 @@
 import NavBar from '../../components/NavBar/NavBar'
 import './Home.css';
+import LogoEmpresa from '../../components/LogoEmpresa/LogoEmpresa';
 
 import empresario from '../../assets/images/empresario-homem.png';
-import projetacao from '../../assets/images/logo-projetacao.png';
-import ventiloar from '../../assets/images/logo-ventiloar.png';
-import peneiras from '../../assets/images/logo-peneiras.png';
+
 
 const Home = () => {
   return (
@@ -31,10 +30,7 @@ const Home = () => {
               <h1>Confira nossa empresas, todas patenteadas</h1>
 
               <div className="imagens-c2">
-                <img className='logo-s2' src={projetacao} alt="logo-projetacao" />
-                <img className='logo-s2' src={ventiloar} alt="logo-ventiloar" />
-                <img className='logo-s2' src={peneiras} alt="logo-peneiras" />
-                <img className='logo-s2' src={projetacao} alt="logo-projetacao" />               
+                <LogoEmpresa />
               </div>
             </div>
 
