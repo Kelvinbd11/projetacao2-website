@@ -5,7 +5,9 @@ import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
 import Invest from './pages/Invest/Invest'
 import Blog from './pages/Blog/Blog'
-// import NavBar from './components/NavBar/NavBar'
+import Projetacao from './pages/Projetacao/Projetacao'
+import Ventiloar from './pages/Ventiloar/Ventiloar'
+import Peneiras from './pages/Peneiras/Peneiras'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,10 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/invest" element={<Invest />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/Projetacao" element={<Projetacao />} />
+              <Route path="/Ventiloar" element={<Ventiloar />} />
+              <Route path="/Peneiras" element={<Peneiras />} />
+
             </Routes>
           </BrowserRouter>
       </div>

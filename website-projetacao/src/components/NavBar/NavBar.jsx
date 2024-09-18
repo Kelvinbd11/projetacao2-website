@@ -14,7 +14,7 @@ const NavBar = () => {
 
   return (
     <header>
-        <img src={logo} alt="logo-projetacao" className="logo" />      
+        <Link to="/"><img src={logo} alt="logo-projetacao" className="logo" /></Link>
         <nav ref={navRef}>
             <Link to="/" className="link-nav" >Início</Link>
             <Link to="/about" className="link-nav" >Sobre nós</Link>
