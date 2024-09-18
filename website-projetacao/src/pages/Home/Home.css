@@ -14,7 +14,7 @@
     position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 80vh; /* Ajuste conforme necessário */
     background: linear-gradient(to top, #5facff45, #fafdff);
     
@@ -82,7 +82,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 25vh; /* Ajuste conforme necessário */
     background: linear-gradient(to bottom, #5facff25, #fafdff);
     flex-direction: column;
@@ -166,9 +166,9 @@
         padding: 0;
         margin: 0;
     }
-
-
-
 }
+
+/* Section 4 */
+
 
 
