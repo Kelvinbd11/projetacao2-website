@@ -5,6 +5,9 @@ import LogoEmpresa from '../../components/LogoEmpresa/LogoEmpresa';
 import empresario from '../../assets/images/empresario-homem.png';
 import empresa from '../../assets/images/empresa.jpg'
 
+import ButtonDark from '../../components/ButtonDark/ButtonDark'
+import ButtonLight from '../../components/ButtonLight/ButtonLight'
+
 
 const Home = () => {
   return (
@@ -16,7 +19,11 @@ const Home = () => {
               <div className='text-content1'>
                 <p id='description1'>Conheça a empresa Projetação</p>
                 <h1>Especialista em Inovações a <br/><span>próxima Startup Unicórnio</span></h1>
-                <p>Holding Projetação LTDA, confira agora os nossos projetos<br/> que serão a próxima Startup Unicórnio do Brasil</p>
+                <p>Holding Projetação LTDA, confira agora os nossos projetos que serão a próxima Startup Unicórnio do Brasil</p>
+                <ButtonDark 
+                  text="Ver projetos"
+                  link="/Projects"
+                />
               </div>
 
               <div className='img-content2'>
@@ -50,8 +57,14 @@ const Home = () => {
                 <p>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</p>
                 
                 <div className='buttons-s3'>
-                  <button id='btn-1'>Ver projetos</button>
-                  <button id='btn-2'>Ver blog</button>
+                  <ButtonDark
+                    text="Ver projetos"
+                    link="/Projects"
+                  />
+                  <ButtonLight
+                    text="Ver Blog"
+                    link="/Blog"
+                  />
                 </div>
 
                 <p>Veja nossos projetos e acompanhe nosso blog. </p>

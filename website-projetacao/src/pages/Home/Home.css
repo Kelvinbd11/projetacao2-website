@@ -165,45 +165,6 @@
         flex-direction: row;
         padding: 0;
         margin: 0;
-
-        & #btn-1{
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 0.5rem 2rem;
-            margin: 1rem 0;
-            margin-right: 0.4rem;
-            background-color: rgb(0, 56, 176);
-            border: rgb(0, 26, 81) 2px solid;
-            border-radius: 0.7em;
-            color: #ffffff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        & #btn-1:hover{
-            background-color: rgb(6, 23, 60);
-        }
-
-        & #btn-2 {
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 0.5rem 2rem;
-            margin: 1rem 0;
-            margin-right: 0.4rem;
-            background-color: rgb(223, 232, 254);
-            /* border: rgb(0, 26, 81) 2px solid; */
-            border: none;
-            border-radius: 0.7em;
-            color: rgb(0, 26, 81);
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        & #btn-2:hover{
-            background-color: rgb(6, 23, 60);
-            color: #fff;
-        }
     }
 
 
