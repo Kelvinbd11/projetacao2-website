@@ -3,6 +3,7 @@ import './Home.css';
 import LogoEmpresa from '../../components/LogoEmpresa/LogoEmpresa';
 
 import empresario from '../../assets/images/empresario-homem.png';
+import empresa from '../../assets/images/empresa.jpg'
 
 
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
           {/* Section 02 - Início */}
 
             <div className="section2">
-              <h1>Confira nossa empresas, todas patenteadas</h1>
+              <h1>Confira nossa empresas e patentes</h1>
 
               <div className="imagens-c2">
                 <LogoEmpresa />
@@ -35,6 +36,33 @@ const Home = () => {
             </div>
 
           {/* Section 02 - Fim */}
+
+          {/* Section 03 - Início */}
+
+          <div className="section3">
+            <div className='img-content3'>
+              <img className='empresa' src={empresa} alt="imagem-empresa" />
+            </div>
+
+            <div className='text-content3'>
+                <p id='description2'>Contamos com inovações promissoras</p>
+                <h1>Especialista em Patentes, <br/><span>Registro de marcas e Inovações.</span></h1>
+                <p>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</p>
+                
+                <div className='buttons-s3'>
+                  <button id='btn-1'>Ver projetos</button>
+                  <button id='btn-2'>Ver blog</button>
+                </div>
+
+                <p>Veja nossos projetos e acompanhe nosso blog. </p>
+
+
+              </div>
+          </div>
+
+          {/* Section 03 - Fim */}
+
+
 
 
           
