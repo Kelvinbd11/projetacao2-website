@@ -1,0 +1,112 @@
+.Container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+.section1 {
+    position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh; /* Ajuste conforme necessário */
+    background: linear-gradient(to top, #5facff45, #fafdff);
+    /* background-image: url('https://img.freepik.com/fotos-gratis/marcos-modernos-cidade_1359-338.jpg?t=st=1726622650~exp=1726626250~hmac=e95b28f0ab18c65e375bd244a41a296dafc95501449fc1ddb3ea091f7899a215&w=996');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; Garante que o desfoque não ultrapasse os limites da div */
+}
+
+
+.text-content1, .img-content2 {
+    position: relative; /* Garante que o conteúdo fique acima da sobreposição */
+    z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+}
+
+
+.text-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding-left: 10rem;
+    width: 50vw;
+    height: 80vh;
+
+    & p {
+        color: rgb(38, 38, 38);
+    }
+
+    & h1 {
+        font-size: 2.5rem;
+        color: #000000;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        line-height: 1.2;
+    }
+
+    & span {
+        color: rgb(0, 56, 176);
+    }
+
+   & #description1{
+    color: rgb(0, 56, 176);
+   }
+}
+
+.img-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 40vw;
+    height: 80vh;
+    padding-right: 10rem;
+}
+
+.homem-empresario {
+    max-width: fit-content;
+    max-height: 90%;
+    transform: scaleX(-1);
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh; /* Ajuste conforme necessário */
+    background: linear-gradient(to bottom, #5facff25, #fafdff);
+    flex-direction: column;
+
+    & h1 {
+        font-size: 1rem;
+        color: rgb(35, 35, 35);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 2.5rem;
+    }
+}
+
+
+.imagens-c2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 0rem 15rem;
+    padding-bottom: 10px;
+
+    & .logo-s2{
+        width: 10rem;
+    }
+}
+
