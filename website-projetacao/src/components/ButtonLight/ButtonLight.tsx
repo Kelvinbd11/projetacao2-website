@@ -25,11 +25,11 @@ export const StyleButton = styled(Link)<StylePropsLight>`
   transition: background-color 0.3s ease;
   text-decoration: none; /* Remove underline do link */
 
-  &:hover {
-    background-color: rgb(6, 23, 60);
-    color: #fff;
-  }
-`;
+    &:hover {
+      background-color: rgb(6, 23, 60);
+      color: #fff;
+    }
+`
 
 const ButtonLight: React.FC<ButtonLightProps> = ({ text, link, $Light = true }) => {
   return (

@@ -11,9 +11,6 @@ interface ButtonDarkProps {
   $Dark?: boolean;
 }
 
-
-
-// Falta mudar as informações, fazer uma condicional para escolher quando o button é dark ou ligth
 export const StyleButton = styled.button<StyleProps> `
   background-color: rgb(0, 56, 176);
   border: rgb(0, 26, 81) 2px solid;
@@ -29,11 +26,10 @@ export const StyleButton = styled.button<StyleProps> `
   margin: 1rem 0;
   margin-right: 0.4rem;
 
-  &:hover {
-    background-color: rgb(6, 23, 60);
-  }
+    &:hover {
+      background-color: rgb(6, 23, 60);
+    }
 `
-
 
 const ButtonDark: React.FC<ButtonDarkProps> = ({text, link, $Dark = true}) => {
   return (

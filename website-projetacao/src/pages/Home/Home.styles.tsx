@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
 // Section 1:
-export const Title = styled.h1 `
-    font-size: 2.5rem;
-    color: #000000;
-    font-weight: 500;
-    padding-bottom: 0.5rem;
-    line-height: 1.2;
-`
 export const Container = styled.div `
     display: flex;
     width: 100%;
@@ -20,7 +13,6 @@ export const Container = styled.div `
     flex-direction: column;
 `
 export const Section1 = styled.div `
-    position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -39,23 +31,19 @@ export const TextContent1 = styled.div `
     width: 50vw;
     height: 80vh;
 
-
-    & span {
-        color: rgb(0, 56, 176);
-    }
-
    & #description1{
     color: rgb(0, 56, 176);
    }
 `
+export const ImgEmpresario = styled.img `
+    max-width: fit-content;
+    max-height: 90%;
+    transform: scaleX(-1);
+`
+
 
 export const Description = styled.p<{ $defaultColor?: boolean }> `
     color: ${props => props.$defaultColor ? "rgb(0, 56, 176)" : "black"}
-`
-
-export const SubText = styled.p `
-    color: rgb(38, 38, 38);
-    font-size: 1rem;
 `
 
 export const ContainerImage = styled.div `
@@ -75,7 +63,7 @@ export const Section2 = styled.div `
     width: 100vw;
     height: 25vh; /* Ajuste conforme necessário */
     background: linear-gradient(to bottom, #5facff25, #fafdff);
-    flex-direction: column;
+    flex-direction: column;    
 `
 
 export const Title2 = styled.h2 `
@@ -125,10 +113,9 @@ export const Section3 = styled.div `
     width: 100vw;
     height: 80vh;
     flex-direction: row;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #5facff25, #fafdff);
+    background: linear-gradient(to bottom, #5facff25, #fafdff);   
 `
+
 export const ImageContent3 = styled.div `
     display: flex;
     justify-content: center;
@@ -159,3 +146,39 @@ export const ButtonsInline = styled.div `
     margin: 0;
 `
 
+// Section 04:
+export const Section5 = styled.div `
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #5facff25, #fafdff);
+`
+
+export const ContentImage5 = styled.div `
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+`
+
+export const ContentText5 = styled.div `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vw;
+    padding-right: 4rem;
+    margin-left: 5rem;
+`
+
+export const ImgSection5 = styled.img `
+    width: 100%;
+    height: 100%;
+    margin-right: 4rem;
+    border-radius: 2rem;
+`
