@@ -7,7 +7,7 @@ import ButtonDark from '../../components/ButtonDark/ButtonDark'
 import ButtonLight from '../../components/ButtonLight/ButtonLight'
 import DetalhesSection from '../../components/DetalhesSection/DetalhesSection';
 import ImgSection4 from '../../assets/images/section4.jpg';
-import { Title, Container, Section1, TextContent1, Description, SubText } from './Home.styles.jsx'
+import { Title, Container, Section1, TextContent1, Description, SubText, ContainerImage, Section2, Title2, ImagesC2, Section3, ImageContent3, ImageEmpresa, ContentText, ButtonsInline } from './Home.styles.jsx'
 
 
 const Home: React.FC = () => {
@@ -21,54 +21,51 @@ const Home: React.FC = () => {
                 <Description $defaultColor={true}>Conheça a empresa Projetação</Description>
                 <Title>Especialista em Inovações a <span>próxima Startup Unicórnio</span></Title>
                 <SubText>Holding Projetação LTDA, confira agora os nossos projetos que serão a próxima Startup Unicórnio do Brasil</SubText>
-                <ButtonDark 
-                  text="Ver projetos"
-                  link="/Projects"
-                />
+                <ButtonDark text="Ver projetos" link="/Projects"/>
               </TextContent1>
 
-              <div className='img-content2'>
+              <ContainerImage>
                 <img className='homem-empresario' src={empresario} alt="homem-empresario" />
-              </div>
+              </ContainerImage>
             </Section1>
           {/* Section 01 -Fim */}
 
           {/* Section 02 - Início */}
-            <div className="section2">
-              <h2>Confira nossa empresas e patentes</h2>
+            <Section2>
+              <Title2>Confira nossa empresas e patentes</Title2>
 
-              <div className="imagens-c2">
+              <ImagesC2>
                 <LogoEmpresa />
-              </div>
-            </div>
+              </ImagesC2>
+
+            </Section2>
           {/* Section 02 - Fim */}
 
           {/* Section 03 - Início */}
-          <div className="section3">
-            <div className='img-content3'>
-              <img className='empresa' src={empresa} alt="imagem-empresa" />
-            </div>
+          <Section3>
+            <ImageContent3>
+              <ImageEmpresa src={empresa} alt={"imagem-empresa"}/>
+            </ImageContent3>
 
-            <div className='text-content3'>
-                <Description $defaultColor={false}>Contamos com inovações promissoras</Description>
-               <Title>Especialista em Patentes, <br/><span>Registro de marcas e Inovações.</span></Title>
-                <p>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</p>
+            <ContentText>
+              <Description $defaultColor={false}>Contamos com inovações promissoras</Description>
+              <Title>Especialista em Patentes, <br/><span>Registro de marcas e Inovações.</span></Title>
+              <SubText>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</SubText>
                 
-                <div className='buttons-s3'>
-                  <ButtonDark
-                    text="Ver projetos"
-                    link="/Projects"
-                  />
-                  <ButtonLight
-                    text="Ver Blog"
-                    link="/Blog"
-                  />
-                </div>
+              <ButtonsInline>
+                <ButtonDark
+                  text="Ver projetos"
+                  link="/Projects"
+                />
+                <ButtonLight
+                  text="Ver Blog"
+                  link="/Blog"
+                />
+                </ButtonsInline>
 
-                <p>Veja nossos projetos e acompanhe nosso blog.</p>
-
-              </div>
-          </div>
+              <SubText>Veja nossos projetos e acompanhe nosso blog.</SubText>
+              </ContentText>
+          </Section3>
           {/* Section 03 - Fim */}
 
           {/* Section 04 - Início */}

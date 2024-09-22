@@ -49,7 +49,7 @@
     font-weight: 300;
    }
 } */
-
+/* 
 .img-content2 {
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@
     width: 40vw;
     height: 80vh;
     padding-right: 10rem;
-}
+} */
 
 .homem-empresario {
     max-width: fit-content;
@@ -65,26 +65,14 @@
     transform: scaleX(-1);
 }
 
-.section2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 25vh; /* Ajuste conforme necessário */
-    background: linear-gradient(to bottom, #5facff25, #fafdff);
-    flex-direction: column;
-
-    & h2 {
-        font-size: 1rem;
-        color: rgb(35, 35, 35);
-        font-weight: 700;
-        text-transform: uppercase;
-        padding-bottom: 2.5rem;
-    }
-}
+/* .section2 {
+    
 
 
-.imagens-c2 {
+} */
+
+
+/* .imagens-c2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,68 +95,39 @@
 
    
 
-}
+} */
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);  /* Tamanho normal */
-    }
-    50% {
-        transform: scale(1.1); /* Aumenta um pouco */
-    }
-    100% {
-        transform: scale(1);  /* Retorna ao tamanho normal */
-    }
-}
+
 
 /* Section 3 */
 
-.section3 {
-    display: flex;
+/* .section3 { */
+    /* display: flex;
     justify-content: center;
     width: 100vw;
     height: 80vh;
     flex-direction: row;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #5facff25, #fafdff);
+    background: linear-gradient(to bottom, #5facff25, #fafdff); */
 
-    & .empresa {
+    /* & .empresa {
         width: 30rem;
         border-radius: 2rem;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);  /* Adiciona sombra */
-    }
+    
 
     /* background-color: #00708a; */
 
-    & .img-content3 {
+    /* & .img-content3 {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40vw;
         height: 80vh;
-    }
+    } */
 
-    & .text-content3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 40%;
-        padding-right: 5rem;
-    }
 
-    & #description2 {
-        color: rgb(0, 56, 176);
-    }
-
-    & .buttons-s3{
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
-}
 
 /* Section 4 */
 
