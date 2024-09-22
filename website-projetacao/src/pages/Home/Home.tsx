@@ -1,13 +1,18 @@
 import NavBar from '../../components/NavBar/NavBar'
-import './Home.css';
 import LogoEmpresa from '../../components/LogoEmpresa/LogoEmpresa';
 import empresario from '../../assets/images/empresario-homem.png';
 import empresa from '../../assets/images/empresa.jpg'
 import ButtonDark from '../../components/ButtonDark/ButtonDark'
 import ButtonLight from '../../components/ButtonLight/ButtonLight'
-import DetalhesSection from '../../components/DetalhesSection/DetalhesSection';
-import ImgSection4 from '../../assets/images/section4.jpg';
-import { Title, Container, Section1, TextContent1, Description, SubText } from './Home.styles.jsx'
+import DetalhesSection, { ImagesC4, Section4 } from '../../components/DetalhesSection/DetalhesSection';
+import ImgS4 from '../../assets/images/section4.jpg';
+import { Container, Section1, TextContent1, Description, ContainerImage, Section2, Title2, ImagesC2, Section3, ImageContent3, ImageEmpresa, ContentText, ButtonsInline, ImgEmpresario, ContentText5, ContentImage5, Section5, ImgSection5 } from './Home.styles.jsx'
+import ColoredText from '../../components/ColoredText/ColoredText';
+import { IoRocket } from "react-icons/io5";
+import { FaMedal } from "react-icons/fa6";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { Title } from '../../components/Title/Title';
+import { SubText } from '../../components/SubText/SubText';
 
 
 const Home: React.FC = () => {
@@ -15,87 +20,83 @@ const Home: React.FC = () => {
     <>
       <NavBar />
        <Container>
-          {/* Section 01 -Início */}
-            <Section1>
-              <TextContent1>
-                <Description $defaultColor={true}>Conheça a empresa Projetação</Description>
-                <Title>Especialista em Inovações a <span>próxima Startup Unicórnio</span></Title>
-                <SubText>Holding Projetação LTDA, confira agora os nossos projetos que serão a próxima Startup Unicórnio do Brasil</SubText>
-                <ButtonDark 
+          <Section1>
+            <TextContent1>
+              <Description $defaultColor={true}>Conheça a empresa Projetação</Description>
+              <Title>Especialista em Inovações a <ColoredText><br />próxima Startup Unicórnio</ColoredText></Title>
+              <SubText>Holding Projetação LTDA, confira agora os nossos projetos que serão a próxima Startup Unicórnio do Brasil</SubText>
+                
+              <ButtonsInline>
+                <ButtonDark
                   text="Ver projetos"
                   link="/Projects"
                 />
-              </TextContent1>
+              </ButtonsInline>
+            </TextContent1>
 
-              <div className='img-content2'>
-                <img className='homem-empresario' src={empresario} alt="homem-empresario" />
-              </div>
-            </Section1>
-          {/* Section 01 -Fim */}
+            <ContainerImage>
+              <ImgEmpresario src={empresario} alt={"homem-empresario"} />
+            </ContainerImage>
+          </Section1>
 
-          {/* Section 02 - Início */}
-            <div className="section2">
-              <h2>Confira nossa empresas e patentes</h2>
+          <Section2>
+            <Title2>Confira nossas empresas e patentes</Title2>
 
-              <div className="imagens-c2">
-                <LogoEmpresa />
-              </div>
-            </div>
-          {/* Section 02 - Fim */}
+            <ImagesC2>
+              <LogoEmpresa />
+            </ImagesC2>
 
-          {/* Section 03 - Início */}
-          <div className="section3">
-            <div className='img-content3'>
-              <img className='empresa' src={empresa} alt="imagem-empresa" />
-            </div>
+          </Section2>
 
-            <div className='text-content3'>
-                <Description $defaultColor={false}>Contamos com inovações promissoras</Description>
-               <Title>Especialista em Patentes, <br/><span>Registro de marcas e Inovações.</span></Title>
-                <p>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</p>
+          <Section3>
+            <ImageContent3>
+              <ImageEmpresa src={empresa} alt={"imagem-empresa"}/>
+            </ImageContent3>
+
+            <ContentText>
+              <Description $defaultColor={false}>Contamos com inovações promissoras</Description>
+              <Title fontSize='2rem'>Especialista em Patentes, <br/><ColoredText>Registro de marcas e Inovações.</ColoredText></Title>
+              <SubText>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</SubText>
                 
-                <div className='buttons-s3'>
-                  <ButtonDark
-                    text="Ver projetos"
-                    link="/Projects"
-                  />
-                  <ButtonLight
-                    text="Ver Blog"
-                    link="/Blog"
-                  />
-                </div>
+              <ButtonsInline>
+                <ButtonDark
+                  text="Ver projetos"
+                  link="/Projects"
+                />
+                <ButtonLight
+                  text="Ver Blog"
+                  link="/Blog"
+                />
+                </ButtonsInline>
 
-                <p>Veja nossos projetos e acompanhe nosso blog.</p>
+              <SubText>Veja nossos projetos e acompanhe nosso blog.</SubText>
+            </ContentText>
+          </Section3>
 
-              </div>
-          </div>
-          {/* Section 03 - Fim */}
+          <Section4>
+            <ImagesC4>
+              <DetalhesSection IconComponent={IoRocket} title='Valuation' description='10 Bilhões'  />
+              <DetalhesSection IconComponent={FaMedal} title='Patentes' description='+6 Patentes'  />
+              <DetalhesSection IconComponent={FaPeopleGroup} title='Parceiros' description='4 Membros'  />
+            </ImagesC4>
+          </Section4>
 
-          {/* Section 04 - Início */}
-          <DetalhesSection />  
-          {/* Section 04 - Fim */}
+          <Section5>
+            <ContentImage5>
+              <ImgSection5 src={ImgS4} alt={"imagem-empresa"}/>
+            </ContentImage5>
 
-          {/* Section 05 - Início */}
-
-          <div className="section4">
-            <div className='img-content4'>
-              <img className='empresa' src={ImgSection4} alt="imagem-empresa" />
-            </div>
-
-            <div className='text-content4'>
-                <p id='description3'>Contamos com inovações promissoras</p>
-                <h1>Seja um Sócio-Investidor <br/><span>vem ser Projetação.</span></h1>
-                <p>Estamos em busca de investimento, para então podermos impulsionar nossos projetos.</p>
+            <ContentText5>
+              <Description>Contamos com inovações promissoras</Description>
+                <Title>Seja um Sócio-Investidor <br/><ColoredText>vem ser Projetação.</ColoredText></Title>
+                <Description>Estamos em busca de investimento, para então podermos impulsionar nossos projetos.</Description>
                 
-                <div className='buttons-s4'>
-                <ButtonDark text="Ver projetos" link="/Projects" />
-                <ButtonLight text="Ver Blog" link="/Blog" />
-                </div>
-              </div>
-          </div>
-
-          {/* Section 05 - Fim */}
-
+                <ButtonsInline>
+                  <ButtonDark text="Ver projetos" link="/Projects" />
+                  <ButtonLight text="Ver Blog" link="/Blog" />
+                </ButtonsInline>
+            </ContentText5>
+          </Section5>
         </Container>
     </>
   )
