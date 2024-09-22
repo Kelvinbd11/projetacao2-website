@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           <Section1>
             <TextContent1>
               <Description $defaultColor={true}>Conheça a empresa Projetação</Description>
-              <Title>Especialista em Inovações a <ColoredText>próxima Startup Unicórnio</ColoredText></Title>
+              <Title>Especialista em Inovações a <ColoredText><br />próxima Startup Unicórnio</ColoredText></Title>
               <SubText>Holding Projetação LTDA, confira agora os nossos projetos que serão a próxima Startup Unicórnio do Brasil</SubText>
                 
               <ButtonsInline>
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
 
             <ContentText>
               <Description $defaultColor={false}>Contamos com inovações promissoras</Description>
-              <Title>Especialista em Patentes, <br/><ColoredText>Registro de marcas e Inovações.</ColoredText></Title>
+              <Title fontSize='2rem'>Especialista em Patentes, <br/><ColoredText>Registro de marcas e Inovações.</ColoredText></Title>
               <SubText>Estamos em busca de alavancar no mercado, e com investimento seremos a próxima Startup Unicórnio do Brasil, com projetos promissores.</SubText>
                 
               <ButtonsInline>
