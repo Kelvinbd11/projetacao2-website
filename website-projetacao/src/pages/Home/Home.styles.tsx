@@ -15,7 +15,7 @@ export const Container = styled.div `
 export const Section1 = styled.div `
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 80vh; /* Ajuste conforme necessário */
     background: linear-gradient(to top, #5facff45, #fafdff);
 `
@@ -60,7 +60,7 @@ export const Section2 = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 25vh; /* Ajuste conforme necessário */
     background: linear-gradient(to bottom, #5facff25, #fafdff);
     flex-direction: column;    
@@ -110,7 +110,7 @@ export const ImagesC2 = styled.div `
 export const Section3 = styled.div `
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     flex-direction: row;
     background: linear-gradient(to bottom, #5facff25, #fafdff);   
@@ -146,11 +146,11 @@ export const ButtonsInline = styled.div `
     margin: 0;
 `
 
-// Section 04:
+// Section 05:
 export const Section5 = styled.div `
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     flex-direction: row;
     margin: 0;

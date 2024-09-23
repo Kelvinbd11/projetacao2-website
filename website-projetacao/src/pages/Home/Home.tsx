@@ -25,7 +25,6 @@ const Home: React.FC = () => {
               <Description $defaultColor={true}>Conheça a empresa Projetação</Description>
               <Title>Especialista em Inovações a <ColoredText><br />próxima Startup Unicórnio</ColoredText></Title>
               <SubText>Holding Projetação LTDA, confira agora os nossos projetos que serão a próxima Startup Unicórnio do Brasil</SubText>
-                
               <ButtonsInline>
                 <ButtonDark
                   text="Ver projetos"
@@ -98,6 +97,7 @@ const Home: React.FC = () => {
             </ContentText5>
           </Section5>
         </Container>
+      
     </>
   )
 }

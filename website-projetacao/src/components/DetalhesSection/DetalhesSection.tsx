@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Section4 = styled.div`
     margin: 0;
+    padding: 0;
+    overflow: hidden;  /* Previne qualquer conteúdo que transborde */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +24,7 @@ export const ImagesC4 = styled.div`
 
 export const CardContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     font-size: 3rem;
     color: rgb(0, 26, 81);
 `
