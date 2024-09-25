@@ -44,20 +44,20 @@ Este projeto está em fase de desenvolvimento, e qualquer feedback ou contribui�
 ## Como Executar o Projeto
 
 1. Clone o repositório:
-   ```bash
+   ```
    git clone https://github.com/Kelvinbd11/projetacao2-website
    ```
 2. Navegue até o diretório do projeto:
-   ```bash
+   ```
   cd projetacao2-webstie
    ```
 
 3. Instale as dependências:
-  ```bash
+  ```
   npm install
   ```
 
 4. Inicie a aplicação:
-   ```bash
+   ```
   npm run dev
    ```
