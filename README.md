@@ -48,9 +48,11 @@ Este projeto está em fase de desenvolvimento, e qualquer feedback ou contribui�
    git clone https://github.com/Kelvinbd11/projetacao2-website
 
 2. Navegue até o diretório do projeto:
+   ```bash
   cd projetacao2-webstie
 
 3. Instale as dependências:
+   ```bash
   npm install
 
 4. Inicie a aplicação:
