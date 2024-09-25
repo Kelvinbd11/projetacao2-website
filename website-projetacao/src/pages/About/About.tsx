@@ -2,6 +2,11 @@ import { ContainerDefault } from '../../components/ContainerDefault/ContainerDef
 import styled from 'styled-components';
 import NavBar from '../../components/NavBar/NavBar'
 import CardMvv from '../../components/CardMvv/CardMvv';
+import { TbTargetArrow } from "react-icons/tb";
+import { FaMountainSun } from "react-icons/fa6";
+import { RiShieldStarFill } from "react-icons/ri";
+import ColoredText from '../../components/ColoredText/ColoredText';
+import MemberSection from '../../components/MemberSection/MemberSection';
 
 const Section1 = styled.div`
   display: flex;  
@@ -28,6 +33,7 @@ const Section2 = styled.div`
   border-radius: 25px;
   margin: 1rem 0;
 `
+
 const TextContent = styled.div`
   display: flex;  
   align-items: center;
@@ -47,18 +53,57 @@ const TextParagraph = styled.p`
   padding: 10px 0;
   font-size: 1.1rem;
   text-align: center;
-
 `
 
 const Section3 = styled.div `
   display: flex;
   justify-content: center;
-  width: 80vw;
-  flex-direction: column; /* Faz os cartões ficarem em coluna */
+  width: 90vw;
+  height: 60vh;
+  flex-direction: column; /* Faz os cartões ficarem em coluna */ 
   align-items: center; /* Centraliza os cartões horizontalmente */
-
 `
 
+const Cards = styled.div`
+  display: flex;
+  jsutify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+`
+
+const Section4 = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  height: 70vh;
+  margin: 0rem 1rem 0rem 1rem;
+`
+
+const TitleSection = styled.h1`
+  padding: 1rem;
+  font-size: 2rem;
+`
+
+const TeamMember = styled.div`
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  gap: 1rem;
+`
+
+const MembersTitle = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+`
 
 
 const About: React.FC = () => {
@@ -85,12 +130,26 @@ const About: React.FC = () => {
     
     <ContainerDefault style={{backgroundColor: '#5facff25' }}>
       <Section3>
-        <CardMvv />
-        <CardMvv />
-        <CardMvv />
-
-
+        <Title>Nossos Pilares</Title>
+        <Cards>  
+          <CardMvv IconComponent={TbTargetArrow} title='Missão' description='Transformar ideias em startups inovadoras, criando soluções eficientes e protegendo inovações com registro de patentes e marcas.' highlight={true}   />
+          <CardMvv IconComponent={FaMountainSun} title='Visão' description='Ser referência em criação de startups inovadoras e líderes em registro de patentes, impulsionando soluções impactantes.' highlight={true}/>
+          <CardMvv IconComponent={RiShieldStarFill} title='Valores' description='Compromisso com a excelência, inovação e integridade. Sucesso só com ética e qualidade, sem atalhos.' highlight={false} /> 
+        </Cards>
       </Section3>
+    </ContainerDefault>
+
+    <ContainerDefault style={{backgroundColor: 'white'}}>
+      <Section4>
+        <MembersTitle>
+          <TitleSection>Membros<br /> <ColoredText>da equipe</ColoredText></TitleSection>
+        </MembersTitle>
+        <TeamMember>
+            <MemberSection />
+            <MemberSection />
+            <MemberSection />
+        </TeamMember>
+      </Section4>
     </ContainerDefault>
 
     </>

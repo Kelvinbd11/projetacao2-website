@@ -5,11 +5,13 @@ import logo from '../../assets/images/logo.png'
 import { Link } from "react-router-dom"
 
 
-const NavBar = () => {
-    const navRef = useRef();
+const NavBar: React.FC = () => {
+    const navRef = useRef<HTMLDivElement | null>(null);
 
     const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav");
+        if(navRef.current){
+            navRef.current.classList.toggle("responsive_nav");
+        }    
     }
 
   return (
