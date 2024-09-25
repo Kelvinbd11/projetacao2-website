@@ -128,6 +128,7 @@ export const ImageEmpresa = styled.img `
     width: 30rem;
     border-radius: 2rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);  /* Adiciona sombra */
+    object-fit: cover; /* Faz a imagem cobrir a div mantendo suas proporções */
 `
 
 export const ContentText = styled.div `
@@ -164,7 +165,7 @@ export const ContentImage5 = styled.div `
     align-items: center;
     width: 60vw;
     height: 80vh;
-`
+`   
 
 export const ContentText5 = styled.div `
     display: flex;
@@ -180,5 +181,8 @@ export const ImgSection5 = styled.img `
     width: 100%;
     height: 100%;
     margin-right: 4rem;
-    border-radius: 2rem;
+    border-top-right-radius: 2rem; /* Arredonda a borda superior direita */
+    border-bottom-right-radius: 2rem; /* Arredonda a borda inferior direita */
+
+    object-fit: cover; /* Faz a imagem cobrir a div mantendo suas proporções */
 `
