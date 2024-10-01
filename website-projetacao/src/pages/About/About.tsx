@@ -1,12 +1,23 @@
 import { ContainerDefault } from '../../components/ContainerDefault/ContainerDefault';
 import styled from 'styled-components';
-import NavBar from '../../components/NavBar/NavBar'
+import NavBar from '../../components/NavBar/NavBar';
 import CardMvv from '../../components/CardMvv/CardMvv';
 import { TbTargetArrow } from "react-icons/tb";
 import { FaMountainSun } from "react-icons/fa6";
 import { RiShieldStarFill } from "react-icons/ri";
-import ColoredText from '../../components/ColoredText/ColoredText';
-import MemberSection from '../../components/MemberSection/MemberSection';
+import KelvinImg from '../../assets/images/kelvinbd.png';
+import DevanImg from '../../assets/images/Devan.png'
+import AndreHiam from '../../assets/images/andrehiam.jpg'
+import MemberCard from '../../components/MemberCard/MemberCard';
+
+const breakpoints = {
+    mobile: '480px',
+    tabletMin: '481px',
+    tabletMax: '1023px',
+    desktopMin: '1024px',
+    desktopMax: '1200px',
+  };
+
 
 const Section1 = styled.div`
   display: flex;  
@@ -15,10 +26,18 @@ const Section1 = styled.div`
   width: 100%;
   height: 20vh;
   background-color: #5facff25;
+
+  @media (max-width: ${breakpoints.mobile}) {
+
+  }
+
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+
+  }
 `
 
 const AboutTitle = styled.h1`
-  text-alight: center;
+  text-align: center;
 `
 
 const Section2 = styled.div`
@@ -32,6 +51,15 @@ const Section2 = styled.div`
   // background: linear-gradient(to bottom, #fafdff, #5facff25);
   border-radius: 25px;
   margin: 1rem 0;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    
+  }
+
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+    height: auto;
+    width: 90vw;
+  }
 `
 
 const TextContent = styled.div`
@@ -39,20 +67,30 @@ const TextContent = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 80vw;
-  padding: 0.1rem 3.5rem;
+  width: 100%;
+  // padding: 0.1rem 3.5rem;
 `
 
 const Title = styled.h1`
   font-size: 2.5rem;
   color: rgb(6, 23, 60);
-  text-alight: center;
+  text-align: center;
 `
 
 const TextParagraph = styled.p`
   padding: 10px 0;
   font-size: 1.1rem;
   text-align: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    
+  }
+
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+    font-size: 0.9rem;
+    text-align: justify;
+    text-align-last: center; /* Centraliza a última linha */
+  }
 `
 
 const Section3 = styled.div `
@@ -62,49 +100,81 @@ const Section3 = styled.div `
   height: 60vh;
   flex-direction: column; /* Faz os cartões ficarem em coluna */ 
   align-items: center; /* Centraliza os cartões horizontalmente */
+
+  @media (max-width: ${breakpoints.mobile}) {
+    
+  }
+
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+    height: auto;
+    margin: 1rem 0;
+  }
+
 `
 
 const Cards = styled.div`
   display: flex;
-  jsutify-content: center;
+  justify-content: center;
   align-items: center;
   margin-top: 2rem;
+
+  @media (max-width: ${breakpoints.mobile}) {
+
+  }
+
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
 `
 
 const Section4 = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  margin: 1rem 1rem;
+  gap: 2rem;
+
+  @media (max-width: ${breakpoints.mobile}) {
+
+  }
+
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+    margin: 0;
+  }
+
+  
+`
+
+const ContentMembers = styled.div`
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: white;
+  flex-direction: row;
   width: 80%;
-  height: 70vh;
-  margin: 0rem 1rem 0rem 1rem;
-`
+  height: auto;
+  margin-bottom: 3rem;
+  gap: 20px;
 
-const TitleSection = styled.h1`
-  padding: 1rem;
-  font-size: 2rem;
-`
+  @media (max-width: ${breakpoints.mobile}) {
+    
+  }
 
-const TeamMember = styled.div`
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  gap: 1rem;
+  @media (min-width: ${breakpoints.tabletMin}) and (max-width: ${breakpoints.tabletMax}) {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  
 `
-
-const MembersTitle = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: start;
-  align-items: center;
-`
-
 
 const About: React.FC = () => {
 
@@ -114,7 +184,7 @@ const About: React.FC = () => {
 
     <ContainerDefault>
       <Section1>
-        <AboutTitle>About Us</AboutTitle>
+        <AboutTitle>Sobre</AboutTitle>
       </Section1>
     </ContainerDefault>
 
@@ -134,24 +204,19 @@ const About: React.FC = () => {
         <Cards>  
           <CardMvv IconComponent={TbTargetArrow} title='Missão' description='Transformar ideias em startups inovadoras, criando soluções eficientes e protegendo inovações com registro de patentes e marcas.' highlight={true}   />
           <CardMvv IconComponent={FaMountainSun} title='Visão' description='Ser referência em criação de startups inovadoras e líderes em registro de patentes, impulsionando soluções impactantes.' highlight={true}/>
-          <CardMvv IconComponent={RiShieldStarFill} title='Valores' description='Compromisso com a excelência, inovação e integridade. Sucesso só com ética e qualidade, sem atalhos.' highlight={false} /> 
+          <CardMvv IconComponent={RiShieldStarFill} title='Valores' description='Compromisso com a excelência, inovação e integridade. Sucesso só com ética e qualidade, sem atalhos.' highlight={true} /> 
         </Cards>
       </Section3>
     </ContainerDefault>
 
-    <ContainerDefault style={{backgroundColor: 'white'}}>
       <Section4>
-        <MembersTitle>
-          <TitleSection>Membros<br /> <ColoredText>da equipe</ColoredText></TitleSection>
-        </MembersTitle>
-        <TeamMember>
-            <MemberSection />
-            <MemberSection />
-            <MemberSection />
-        </TeamMember>
+          <Title style={{paddingTop: '2rem'}}>Membros da Holding</Title>
+          <ContentMembers>
+            <MemberCard title='Kelvin' description='Desenvolvedor Full Stack' img={KelvinImg} />
+            <MemberCard title='Devan' description='Ceo Fundador' img={DevanImg} />
+            <MemberCard title='André' description='Designer Product' img={AndreHiam} />
+          </ContentMembers>
       </Section4>
-    </ContainerDefault>
-
     </>
   )
 }
