@@ -87,13 +87,13 @@ const Home: React.FC = () => {
 
             <ContentText5>
               <Description>Contamos com inovações promissoras</Description>
-                <Title>Seja um Sócio-Investidor <br/><ColoredText>vem ser Projetação.</ColoredText></Title>
-                <Description>Estamos em busca de investimento, para então podermos impulsionar nossos projetos.</Description>
+              <Title>Seja um Sócio-Investidor <br/><ColoredText>vem ser Projetação.</ColoredText></Title>
+              <Description>Estamos em busca de investimento, para então podermos impulsionar nossos projetos.</Description>
                 
-                <ButtonsInline>
-                  <ButtonDark text="Ver projetos" link="/Projects" />
-                  <ButtonLight text="Ver Blog" link="/Blog" />
-                </ButtonsInline>
+              <ButtonsInline>
+                <ButtonDark text="Ver projetos" link="/Projects" />
+                <ButtonLight text="Ver Blog" link="/Blog" />
+              </ButtonsInline>
             </ContentText5>
           </Section5>
         </Container>
